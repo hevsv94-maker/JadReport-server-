@@ -47,7 +47,7 @@ app.get('/SLIMS.API/api/public/DownloadReport', (req, res) => {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Laboratory Report – ${labId}</title>
+<title>PLD Diagnostics – Laboratory Report</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Helvetica,Arial,sans-serif;font-size:10pt;background:#e8e8e8;color:#000}
@@ -97,7 +97,7 @@ body{font-family:Helvetica,Arial,sans-serif;font-size:10pt;background:#e8e8e8;co
 <body>
 
 <div class="noprint" style="background:#1a4a7a;color:#fff;text-align:center;padding:8px 0;font-size:10.5pt">
-  ELD Diagnostics – Electronic Report Verification &nbsp;&nbsp;
+  PLD Diagnostics – Electronic Report Verification &nbsp;&nbsp;
   <button onclick="window.print()" style="padding:3px 14px;border-radius:4px;border:none;background:#fff;font-weight:bold;cursor:pointer">🖨 Print / Save PDF</button>
 </div>
 
@@ -131,7 +131,7 @@ body{font-family:Helvetica,Arial,sans-serif;font-size:10pt;background:#e8e8e8;co
       <td class="lbl" style="padding-left:20px">Reg. Date</td><td class="col">:</td><td>${p.regDate} ${p.regTime}</td>
     </tr>
     <tr>
-      <td class="lbl">Client Name</td><td class="col">:</td><td class="val" colspan="3">ELD DIAGNOSTICS BIKANER-2188</td>
+      <td class="lbl">Client Name</td><td class="col">:</td><td class="val" colspan="3">PLD DIAGNOSTICS BIKANER-2188</td>
       <td class="lbl" style="padding-left:20px">Sample Date</td><td class="col">:</td><td>${p.regDate} ${p.regTime}</td>
     </tr>
     <tr>
@@ -207,7 +207,7 @@ body{font-family:Helvetica,Arial,sans-serif;font-size:10pt;background:#e8e8e8;co
 });
 
 app.get('/', (req, res) => {
-  res.send('<html><body style="font-family:Helvetica,Arial;text-align:center;padding:60px;background:#eee"><h2>ELD Diagnostics – Report Verification</h2><p>Scan a QR code from a lab report to view it.</p></body></html>');
+  res.send('<html><body style="font-family:Helvetica,Arial;text-align:center;padding:60px;background:#eee"><h2></body></html>');
 });
 
 app.listen(PORT, () => {
