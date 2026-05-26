@@ -1,6 +1,6 @@
-# ELD Diagnostics – Report Server
+# pld Diagnostics – Report Server
 
-A lightweight Node.js server that serves lab reports matching the original ELD Diagnostics format. Each QR code on the printed reports links to this server, which renders the patient's data in a pixel-accurate HTML replica of the original report.
+A lightweight Node.js server that serves lab reports matching the original pLD Diagnostics format. Each QR code on the printed reports links to this server, which renders the patient's data in a pixel-accurate HTML replica of the original report.
 
 ---
 
